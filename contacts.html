@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Контакты</title>
+</head>
+<body>
+    <header>
+        <h1>Контакты</h1>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Свяжитесь с нами</h2>
+
+        <div class="contact-info">
+            <h3>Наши контакты</h3>
+            <p><strong>Адрес:</strong> г. Москва, ул. Примерная, д. 1</p>
+            <p><strong>Телефон:</strong> +7 (495) 123-45-67</p>
+            <p><strong>Электронная почта:</strong> info@avtoprofi.ru</p>
+            <p><strong>Режим работы:</strong> Пн-Вс: 9:00 - 20:00</p>
+        </div>
+
+        <form action="/submit_contact_form" method="post">
+            <fieldset>
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+    
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email" placeholder="Введите вашу почту" required>
+    
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" placeholder="Введите ваше сообщение" required></textarea>
+    
+                <input type="submit" value="Отправить сообщение">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Автосервис "АвтоПрофи". Все права защищены.</p>
+    </footer>
+</body>
+</html>

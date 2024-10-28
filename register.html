@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <body>
+
+        <header>
+            <h1 class="register">Регистрация</h1>
+        </header>
+    
+        <main>
+            <h2>Форма регистрации</h2>
+            <form action="/submit_registration" method="post">
+                <fieldset>
+                    <legend>Личные данные</legend>
+    
+                    <label for="full-name">ФИО:</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Введите ваше ФИО" required>
+    
+                    <label for="email">Электронная почта:</label>
+                    <input type="email" id="email" name="email" placeholder="Введите вашу электронную почту" required>
+    
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+
+                    <label for="birth-date">Дата рождения:</label>
+                    <input type="date" id="birth-date" name="birth-date" required>
+                </fieldset>
+
+                <input type="submit" value="Зарегистрироваться">
+            </form>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 Регистрация. Все права защищены.</p>
+        </footer>
+</body>
+</html>
